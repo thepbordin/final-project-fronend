@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600;700&family=Inter:wght@400;500;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  padding: 50px 30px 50px 30px;
+}
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.container {
+  background-color: #88f09b;
+  color: black;
+  border-radius: 50px;
+  overflow: hidden;
+
+  margin-top: 20px;
+  display: flex;
+  height: 70vh;
+}
+.form {
+  /* min-width: 300px; */
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+.room-list {
+  width: 100%;
+
+  background-color: white;
+  border-radius: 67px 0 0 67px;
+  padding: 50px;
+}
+
+.subject-list span {
+  color: black;
+  padding: 5px 7px 5px 7px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 7px;
+  background-color: white;
+}
