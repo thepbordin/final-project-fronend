@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600;700&family=Inter:wght@400;500;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  padding: 50px 30px 50px 30px;
+}
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.container {
+  /* color: black; */
+  /* overflow: hidden; */
+  margin-top: 20px;
+  display: flex;
+  height: 70vh;
+  min-width: 300px;
+}
+.form {
+  /* min-width: 300px; */
+  background-color: #2F2B2B;
+  border-radius: 30px;
+  padding: 50px;
+  margin-right: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+}
+.room-list {
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 40px;
+  position: relative;
+}
+
+.room-name {
+  color: black;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.add_button {
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: auto;
+    height: 78px;
+    width: 78px;
+    font-size: 66px;
+    border: 0px;
+    transition: 0.5s ease;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.add_button:active {
+    transform: scale(0.97);
+}
+.add_button:hover {
+    transition: 0.5s ease;
+    filter: invert(70%);
+}
+
+.subject-list span {
+  color: black;
+  padding: 5px 7px 5px 7px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 7px;
+  background-color: white;
+}
