@@ -16,7 +16,7 @@ body {
   margin: 0;
   background-color: black;
   color: white;
-  padding: 50px 30px 50px 30px;
+  padding: 50px;
 }
 h1,
 p,
@@ -28,11 +28,19 @@ h6 {
   margin: 0;
 }
 
+
+
 .container {
-  margin-top: 20px;
+
+  margin-top: 40px;
   display: flex;
+  justify-content: center;
   height: 80vh;
   min-width: 300px;
+
+}
+#form-title{
+  text-align: center;
 }
 .form {
   /* min-width: 300px; */
@@ -47,6 +55,7 @@ h6 {
 
   width: 400px;
 }
+
 
 .subject-list {
   /* scrollbar-height  */
@@ -240,4 +249,10 @@ span[alt]:hover::before {
 span[alt]:not(:hover)::before {
   opacity: 0;
   pointer-events: none;
+}
+form label{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: block;
 }

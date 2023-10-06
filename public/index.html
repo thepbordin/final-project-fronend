@@ -13,21 +13,34 @@
     <div class="container">
       <div class="form">
         <div class="subject-list">
-          <h2>Subjects</h2>
-          <div class="subject-scroll">
-            
+          <h2 id="form-title">Select Room</h2>
+          <div class="subject-scroll"></div>
+          <div class="post-form" style="display: none">
+            <form action="">
+
+              <label for="title">Note Title</label>
+              <input type="text" name="title" id="title" placeholder="Title" />
+              <label for="title">Short Describe Your Note</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="30"
+                rows="10"
+                placeholder="Description"
+              ></textarea>
+              <label for="file">Upload Your note</label>
+              <input type="file" name="file" id="file" />
+            </form>
           </div>
         </div>
       </div>
       <div class="room-section">
         <div class="room-name">
-          <p id="room-name">Select Room</p>
+          <p id="room-name">Please, Select Room First.</p>
         </div>
-        <div class="posts">
-          
-        </div>
+        <div class="posts"></div>
         <div class="sort">
-          <img src="./image/sort.svg" alt="">
+          <img src="./image/sort.svg" alt="" />
           <select name="sort" id="sort-select">
             <option value="score">Score</option>
             <option value="lastest">Latest</option>
