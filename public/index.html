@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myLectureVille</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>myLectureVille</h1>
+    <p>share your posts</p>
+
+    <div class="container">
+      <div class="form">
+        <div class="subject-list">
+          <h2>Subjects</h2>
+          <div class="subject-scroll">
+            
+          </div>
+        </div>
+      </div>
+      <div class="room-section">
+        <div class="room-name">
+          <p id="room-name">Select Room</p>
+        </div>
+        <div class="posts">
+          
+        </div>
+        <div class="sort">
+          <img src="./image/sort.svg" alt="">
+          <select name="sort" id="sort-select">
+            <option value="score">Score</option>
+            <option value="lastest">Latest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+        <button class="add_button">+</button>
+      </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
