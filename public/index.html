@@ -3,33 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myLectureVille</title>
+    <title>myQuestionVille</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>myLectureVille</h1>
-    <p>share your posts</p>
+    <h1>myQuestionVille</h1>
+    <p>answer me pls!</p>
+    <div class="modal">
+      <div class="modal-content">
 
+        <div style="display: flex; flex-direction: column; gap: 20px; position: relative; width: 100%; ">
+          <h3 class="close-m">&times;</h3>
+          <h1 id="modal-title" style="margin: 0; font-size: 32px" >
+            Ques Title
+          </h1>
+          <p class="modal-date">12/10/2023</p>
+          <p class="modal-desc">
+            Ques desc
+          </p>
+          <div class="">
+            <h2 >Comments</h2>
+            <div style="margin-top: 20px;" class="comments-container"></div>
+            <form id="comment-form" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+
+              <input type="text" id="comment-text" required>
+              <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg></button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="form">
         <div class="subject-list">
+          <div class="btn-container">
+            <button id="add-room-btn" class="add-room-btn">
+              Add Room
+            </button>
+            
+            <button id="create-room-btn" class="create-room-btn">
+              New Room Session?
+            </button>
+          </div>
+          
+
           <h2 id="form-title">Select Room</h2>
+
           <div class="subject-scroll"></div>
           <div class="post-form" style="display: none">
-            <form action="">
+            
+            <form action="" id="post-form">
+              <div class="post-element">
+                <label for="title" id="title-label">Your Question Title</label>
+                <input type="text" name="title" id="title" />
+                <label for="title"> Describe Your Curiosity</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <!-- <label for="file">Upload Your note</label> -->
 
-              <label for="title">Note Title</label>
-              <input type="text" name="title" id="title" placeholder="Title" />
-              <label for="title">Short Describe Your Note</label>
-              <textarea
-                name="description"
-                id="description"
-                cols="30"
-                rows="10"
-                placeholder="Description"
-              ></textarea>
-              <label for="file">Upload Your note</label>
-              <input type="file" name="file" id="file" />
+                <button type="submit" class="submit-btn">Ask!</button>
+              </div>
             </form>
           </div>
         </div>
@@ -38,16 +77,21 @@
         <div class="room-name">
           <p id="room-name">Please, Select Room First.</p>
         </div>
-        <div class="posts"></div>
+        <div class="post-container">
+          <div class="posts"></div>
+        </div>
+        
         <div class="sort">
           <img src="./image/sort.svg" alt="" />
           <select name="sort" id="sort-select">
-            <option value="score">Score</option>
+            <option value="score">Voting</option>
             <option value="lastest">Latest</option>
             <option value="oldest">Oldest</option>
           </select>
         </div>
-        <button class="add_button">+</button>
+        <button class="add_button" id="add_button" style="display: none;">+
+          <!-- <div class="add_button_">Add yours</div> -->
+        </button>
       </div>
     </div>
     <script type="module" src="./scripts/main.js"></script>
